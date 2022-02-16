@@ -59,17 +59,18 @@
             update(event) {
               // template method //
             },
-            getDistance(pointA, pointB){
-              const distanceX = pointB.x -pointA.x;
-              const distanceY = pointB.y -pointA.y;
-              const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY)
-              return distance;
-            },
-            logger(value){
-              console.log(value)
-            }
+           
           };
         },
+        getDistance(pointA, pointB){
+          const distanceX = pointB.x -pointA.x;
+          const distanceY = pointB.y -pointA.y;
+          const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY)
+          return distance;
+        },
+        logger(value){
+          console.log(value)
+        }
       },
     };
   }(window, window._));
